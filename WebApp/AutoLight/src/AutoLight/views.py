@@ -3,3 +3,9 @@ from django.http import HttpResponse
 
 def home_page(request):
 	return render(request, "homepage.html", {})
+
+def about_page(request):
+	return render(request, "homepage.html", {})
+
+def contact_page(request):
+	return render(request, "homepage.html", {})
