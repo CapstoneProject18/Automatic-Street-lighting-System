@@ -67,7 +67,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [repo](link)
+* **xyz** - *Initial work* - [repo](link)
 
 See also the list of [contributors]https://github.com/orgs/CapstoneProject18/teams/automatic-street-lighting-system/members) who participated in this project.
 
