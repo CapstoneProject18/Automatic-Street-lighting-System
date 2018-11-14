@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <style>
 body, html {
     height: 100%;
@@ -148,12 +149,13 @@ Do the Earth a favor. Be a power saver.</p>
      <br> <br>
      <p><span class="w3-tag">FYI!</span> We offer full-service catering for any defect, large or small. We understand your needs and we will cater the service to satisfy your needs.</p>
      <p><strong>File</strong> a complaint as per your experience:</p>
-     <form action="/action_page.php" target="_blank">
-       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Full Name" required name="Name"></p>
-       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nearest Location" required name="People"></p>
-       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-       <p><button class="w3-button w3-black" type="submit">File a complaint</button></p>
+     
+     <form method="POST" target="_blank"> {% csrf_token %}
+       {{ form }}
+       <br>
+       <button type="submit" class="btn btn-primary form-control"> Submit </button>
      </form>
+    
     </div>
   </div>
 </div>
