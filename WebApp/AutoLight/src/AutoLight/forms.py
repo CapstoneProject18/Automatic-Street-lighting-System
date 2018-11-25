@@ -30,7 +30,7 @@ class ComplaintForm(forms.Form):
 class LoginForm(forms.Form):
 	username = forms.CharField(widget=forms.TextInput(
 			attrs={
-				"class":"form-control",
+				"class":"form-control form-group",
 				"id":"form_full_name"
 			}
 		)
@@ -39,7 +39,7 @@ class LoginForm(forms.Form):
 	password = forms.CharField(
 		widget=forms.PasswordInput(
 		attrs={
-				"class":"form-control"
+				"class":"form-control form-group"
 			}
 		)
 	)
