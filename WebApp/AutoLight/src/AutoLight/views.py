@@ -37,11 +37,14 @@ def login_page(request):
 			login(request, user)
 			# Redirect to a success page
 			#context['form'] = LoginForm()
-			return redirect("/admin")
+			return redirect("/dashboard")
 		else:
 			# Return an 'invalid login' error message.
 			print ("Error")
 	return render(request, "auth/login.html", context)
+
+def dashboard_page(request):
+	return render(request, "dashboard.html")
 
 def register_page(request):
 	form = LoginForm(request.POST or None)
