@@ -46,6 +46,9 @@ def login_page(request):
 def dashboard_page(request):
 	return render(request, "dashboard.html")
 
+def user_page(request):
+	return render(request, "user.html")
+
 def register_page(request):
 	form = LoginForm(request.POST or None)
 	context = {
