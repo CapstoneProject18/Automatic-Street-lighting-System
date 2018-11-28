@@ -57,7 +57,7 @@ def lightcontrol_page(request):
 	if(request.GET.get('mybtn')):
 		GPIO.output(5, GPIO.HIGH)
 	if(request.GET.get('mybtn_1')):
-		GPIO.output(5, GPIO.LOW)
+		GPIO.output(5, GPIO.HIGH		
 	return render(request, "lightcontrol.html")
 
 def user_page(request):

@@ -135,7 +135,7 @@
 							<div class="container">	
 								<h3>Light 1: </h3>
 								<form action="#" method="GET">								
-								<input type="submit" class="btn btn-primary" value="Turn On" name="mybtn"></input>
+								<input type="submit" class="btn btn-primary"  name="mybtn"></input>
 								</form>
 								<form action="#" method="GET">	
 								<input type="submit" class="btn btn-primary" value="Turn Off" name="mybtn_1"></input>								
