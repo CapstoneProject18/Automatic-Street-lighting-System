@@ -2,24 +2,31 @@ language: python # => 1
 
     python: # => 2
 
-      - "3.0"
+      - "2.6"
 
       - "2.7"
 
-    services: # => 3
-
-      - mysql
+     services:
+        - mysql
 
     env: # => 4
 
-      -DJANGO=1.8 DB=mysql
+       - DJANGO_VERSION=1.10.8 DB=mysql
+    
+    before_install:
+        - mysql -e 'CREATE DATABASE IF NOT EXISTS test;'
+    
     install: # => 5
 
       - pip install -r requirements.txt
+      - pip install -q Django==1.10.8
+      - python setup.py -q install
 
-    before_script: # => 6
-
-      - mysql -e 'create database test;' -u root
+    
     script: # => 7
 
       - python manage.py test
+      
+    notifications:
+    email:
+        - ankit.pahuja05@gmail.com
