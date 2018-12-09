@@ -45,6 +45,10 @@ def login_page(request):
 
 def dashboard_page(request):
 	return render(request, "dashboard.html")
+def weather_page(request):
+	return render(request, "weather.html")
+def lightcontrol_page(request):
+	return render(request, "lightcontrol.html")
 
 def user_page(request):
 	return render(request, "user.html")

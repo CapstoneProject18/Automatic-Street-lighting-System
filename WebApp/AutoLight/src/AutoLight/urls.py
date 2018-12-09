@@ -18,12 +18,13 @@ from django.conf.urls.static import static
 
 from django.conf.urls import url#
 from django.contrib import admin
-from .views import home_page,login_page, dashboard_page, user_page
+from .views import home_page,login_page, dashboard_page, user_page, weather_page, lightcontrol_page
 
 urlpatterns = [
     url(r'^$', home_page),
     url(r'^dashboard$', dashboard_page),    
-    url(r'^user$', user_page),
+    url(r'^light-control$', lightcontrol_page),
+    url(r'^weather$', weather_page),
     url(r'^login$', login_page),
     url(r'^admin/', admin.site.urls),
 ]
