@@ -6,8 +6,14 @@ from django.contrib.auth import authenticate, login
 import RPi.GPIO as GPIO
 import time
 
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(5, GPIO.OUT)
+#GPIO.setmode(GPIO.BOARD)
+#GPIO.cleanup()
+#GPIO.setup(3, GPIO.OUT)
+#GPIO.setup(5, GPIO.OUT)
+#GPIO.setup(8, GPIO.OUT)
+#GPIO.setup(11, GPIO.OUT)
+#GPIO.setup(13, GPIO.OUT)
+
 
 def home_page(request):
 	contact_form = ComplaintForm(request.POST or None)
@@ -54,10 +60,34 @@ def dashboard_page(request):
 def weather_page(request):
 	return render(request, "weather.html")
 def lightcontrol_page(request):
+	GPIO.cleanup()
+	GPIO.setmode(GPIO.BOARD)
+	GPIO.setup(3, GPIO.OUT)
+	GPIO.setup(5, GPIO.OUT)
+	GPIO.setup(8, GPIO.OUT)
+	GPIO.setup(11, GPIO.OUT)
+	GPIO.setup(13, GPIO.OUT)
+	
 	if(request.GET.get('mybtn')):
-		GPIO.output(5, GPIO.HIGH)
+		GPIO.output(3, GPIO.HIGH)
 	if(request.GET.get('mybtn_1')):
+		GPIO.output(3, GPIO.LOW)
+	if(request.GET.get('mybtn_2')):
+		GPIO.output(5, GPIO.HIGH)
+	if(request.GET.get('mybtn_3')):
 		GPIO.output(5, GPIO.LOW)
+	if(request.GET.get('mybtn_4')):
+		GPIO.output(8, GPIO.HIGH)
+	if(request.GET.get('mybtn_5')):
+		GPIO.output(8, GPIO.LOW)
+	if(request.GET.get('mybtn_6')):
+		GPIO.output(11, GPIO.HIGH)
+	if(request.GET.get('mybtn_7')):
+		GPIO.output(11, GPIO.LOW)
+	if(request.GET.get('mybtn_8')):
+		GPIO.output(13, GPIO.HIGH)
+	if(request.GET.get('mybtn_9')):
+		GPIO.output(13, GPIO.LOW)
 	return render(request, "lightcontrol.html")
 
 def user_page(request):

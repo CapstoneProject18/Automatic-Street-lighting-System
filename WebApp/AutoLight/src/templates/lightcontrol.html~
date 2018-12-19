@@ -135,7 +135,7 @@
 							<div class="container">	
 								<h3>Light 1: </h3>
 								<form action="#" method="GET">								
-								<input type="submit" class="btn btn-primary"  name="mybtn"></input>
+								<input type="submit" class="btn btn-primary" value="Turn On" name="mybtn"></input>
 								</form>
 								<form action="#" method="GET">	
 								<input type="submit" class="btn btn-primary" value="Turn Off" name="mybtn_1"></input>								
@@ -144,30 +144,46 @@
 						</div>
 						<div class="jumbotron jumbotron-fluid">
 							<div class="container">	
-								<h3>Light 2: </h3>
-								<button type="button" class="btn btn-primary">Turn ON</button>
-								<button type="button" class="btn btn-primary">Turn OFF</button>
+								<h3>Light : 2</h3>
+								<form action="#" method="GET">								
+								<input type="submit" class="btn btn-primary" value="Turn On" name="mybtn_2"></input>
+								</form>
+								<form action="#" method="GET">	
+								<input type="submit" class="btn btn-primary" value="Turn Off" name="mybtn_3"></input>								
+								</form>							
 							</div>
 						</div>
 						<div class="jumbotron jumbotron-fluid">
 							<div class="container">	
 								<h3>Light 3: </h3>
-								<button type="button" class="btn btn-primary">Turn ON</button>
-								<button type="button" class="btn btn-primary">Turn OFF</button>
+								<form action="#" method="GET">								
+								<input type="submit" class="btn btn-primary" value="Turn On" name="mybtn_4"></input>
+								</form>
+								<form action="#" method="GET">	
+								<input type="submit" class="btn btn-primary" value="Turn Off" name="mybtn_5"></input>								
+								</form>							
 							</div>
 						</div>
 						<div class="jumbotron jumbotron-fluid">
 							<div class="container">	
 								<h3>Light 4: </h3>
-								<button type="button" class="btn btn-primary">Turn ON</button>
-								<button type="button" class="btn btn-primary">Turn OFF</button>
+								<form action="#" method="GET">								
+								<input type="submit" class="btn btn-primary" value="Turn On" name="mybtn_6"></input>
+								</form>
+								<form action="#" method="GET">	
+								<input type="submit" class="btn btn-primary" value="Turn Off" name="mybtn_7"></input>								
+								</form>							
 							</div>
 						</div>
 						<div class="jumbotron jumbotron-fluid">
 							<div class="container">	
 								<h3>Light 5: </h3>
-								<button type="button" class="btn btn-primary">Turn ON</button>
-								<button type="button" class="btn btn-primary">Turn OFF</button>
+								<form action="#" method="GET">								
+								<input type="submit" class="btn btn-primary" value="Turn On" name="mybtn_8"></input>
+								</form>
+								<form action="#" method="GET">	
+								<input type="submit" class="btn btn-primary" value="Turn Off" name="mybtn_9"></input>								
+								</form>							
 							</div>
 						</div>
 					</div>
